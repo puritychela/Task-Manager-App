@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #4b006e, #2d1b55);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.app {
+  max-width: 500px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.form {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: #1e1e2f;
+}
+
+.todo-box {
+  background-color: #1e1e2f;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.todo-item {
+  padding: 1rem;
+  border-bottom: 1px solid #333;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.todo-item input[type='checkbox'] {
+  margin-right: 1rem;
+}
+
+.todo-item.done label {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background-color: #25253e;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filters {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.filters button,
+.clear {
+  background: none;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.filters button.active,
+.filters button:hover,
+.clear:hover {
+  color: white;
+}
+.checkbox-container input[type='checkbox'] {
+  display: none;
+}
+
+.checkbox input[type='checkbox'] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  border-radius: 50%; /* 👈 This makes it circular */
+  position: relative;
+  cursor: pointer;
+}
+.checkbox input[type='checkbox']:checked {
+  background-color: #6c63ff;
+  border-color: #6c63ff;
+}
+.checkbox input[type='checkbox']:checked::after {
+  content: '✓';
+  position: absolute;
+  top: -2px;
+  left: 4px;
+  font-size: 16px;
+  color: white;
+}
