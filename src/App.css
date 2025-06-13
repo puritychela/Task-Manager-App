@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #4b006e, #2d1b55);
+  background: linear-gradient(to bottom, #4b006e 40%, black 60%);
   color: white;
   display: flex;
   justify-content: center;
